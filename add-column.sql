@@ -1,2 +1,2 @@
-ALTER TABLE "year"
-      ADD COLUMN artists INTEGER NOT NULL;
+ALTER TABLE artists
+      ADD COLUMN "year" INTEGER NOT NULL;
