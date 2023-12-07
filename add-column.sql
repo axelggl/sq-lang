@@ -1,0 +1,2 @@
+ATLER TABLE "year"
+      ADD COLUMN artists INTEGER NOT NULL;
