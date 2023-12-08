@@ -18,7 +18,7 @@ VALUES (
     'Doe',
     'John',
     'IT Developer',
-    (SELECT EmployeeId FROM employees WHERE LastName = 'Mithell' AND FirstName = 'Michael'),
+    (SELECT EmployeeId FROM employees WHERE LastName = 'Mitchell' AND FirstName = 'Michael'),
     '1999-03-18 00:00:00',
     '2020-03-18 00:00:00',
     '142 rue Sainte-Catherine',
