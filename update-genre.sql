@@ -1,2 +1,3 @@
 UPDATE genres
-SET "Hip Hop/Rap" = "Rap"
+SET genre = "Rap"
+WHERE genre = "Hip Hop/Rap"
