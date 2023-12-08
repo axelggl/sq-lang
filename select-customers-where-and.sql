@@ -1,4 +1,4 @@
 SELECT FirstName, LastName
 FROM customers
 WHERE Country = 'USA'
-AND SupportRep = 'Jane Peacock'
+AND SupportRepId = 3
