@@ -1,1 +1,1 @@
-DELETE FROM 'artists'
+DELETE FROM 'artist'
