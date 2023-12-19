@@ -1,4 +1,4 @@
 SELECT Name, Milliseconds
 FROM tracks
-WHERE Name = 'AC/DC'
+WHERE Composer = 'AC/DC'
 ORDER BY Milliseconds ASC
