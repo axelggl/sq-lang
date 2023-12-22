@@ -1,3 +1,3 @@
 SELECT COUNT(*) NbCompanies
-FROM Customers
-WHERE Company IS NULL
+FROM customers
+WHERE Company IS NOT NULL
