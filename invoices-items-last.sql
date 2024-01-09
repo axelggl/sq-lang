@@ -1,6 +1,6 @@
 SELECT Name
 FROM tracks
-WHERE TrackId ID = (
+WHERE TrackId = (
     SELECT TrackId
     FROM invoice_items
     WHERE invoiceId = (
