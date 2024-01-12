@@ -3,8 +3,8 @@ FROM customers c
 JOIN employees e ON c.SupportRepId = e.EmployeeId
 WHERE e.EmployeeId = (
     SELECT c.SupportRepId
-    FROM invoices
-    JOIN customers c ON invoices.CustomerId = c.CustomerId
+    FROM invoices i
+    JOIN customers c ON i.CustomerId = c.CustomerId
     GROUP BY c.SupportRepId
     LIMIT 1, 2
 )
