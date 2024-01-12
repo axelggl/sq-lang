@@ -1,4 +1,4 @@
-SELECT DISTINCT InvoiceId
+SELECT DISTINCT i.InvoiceId
 FROM invoices i
 JOIN invoice_items it ON i.InvoiceId = it.InvoiceId
 WHERE it.TrackId IN (
@@ -6,6 +6,6 @@ WHERE it.TrackId IN (
     FROM tracks t
     JOIN genres g ON t.GenreId = g.GenreId
     GROUP BY g.GenreId
-    HAVING MAX(t.milliseconds)
+    HAVING MAX(milliseconds)
     )
 ORDER BY i.InvoiceId ASC;
