@@ -1,7 +1,7 @@
 SELECT e.LastName || ' ' || e.FirstName AS '3rd best seller'
 FROM customers c
 JOIN employees e ON c.SupportRepId = e.EmployeeId
-WHERE c.CustomerId IN (
+WHERE c.CustomerId = (
     SELECT c.SupportRepId
     FROM invoices
     JOIN customers c ON invoices.CustomerId = c.CustomerId
