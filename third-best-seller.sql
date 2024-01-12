@@ -6,6 +6,6 @@ WHERE e.EmployeeId = (
     FROM invoices i
     JOIN customers c ON i.CustomerId = c.CustomerId
     GROUP BY c.SupportRepId
-    LIMIT 1, 2
+    LIMIT 1 OFFSET 2
 )
 GROUP BY '3rd best seller';
