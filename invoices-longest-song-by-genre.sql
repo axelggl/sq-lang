@@ -6,6 +6,6 @@ WHERE it.TrackId IN (
     FROM tracks t
     JOIN genres g ON t.GenreId = g.GenreId
     GROUP BY g.GenreId
-    HAVING MAX(milliseconds)
+    HAVING MAX(t.milliseconds)
     )
 ORDER BY i.InvoiceId ASC;
