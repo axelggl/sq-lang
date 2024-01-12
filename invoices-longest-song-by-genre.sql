@@ -8,4 +8,4 @@ WHERE it.TrackId IN (
     GROUP BY g.GenreId
     HAVING MAX(milliseconds)
     )
-ORDER BY InvoiceId ASC;
+ORDER BY i.InvoiceId ASC;
